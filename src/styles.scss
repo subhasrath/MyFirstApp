@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-@import "flowbite/src/themes/default";
+@use "tailwindcss";
+@use "flowbite/src/themes/default";
 
-@plugin "flowbite/plugin";
-@source "../node_modules/flowbite";
+/* Your custom styles */
+:root {
+  --primary-color: #3b82f6;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+}

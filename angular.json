@@ -32,9 +32,10 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/flowbite/dist/flowbite.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/flowbite/dist/flowbite.js"]
           },
           "configurations": {
             "production": {

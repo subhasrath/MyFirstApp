@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- Base App Theme -->
+  <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+    <!-- Status bar visible (not hidden behind the webview) -->
+    <item name="android:windowFullscreen">false</item>
+
+    <!-- Transparent status bar so Angular app adjusts correctly -->
+    <item name="android:statusBarColor">@android:color/transparent</item>
+
+    <!-- Navigation bar spacing fix -->
+    <item name="android:navigationBarColor">@android:color/black</item>
+
+    <!-- Fix white background flash on app start -->
+    <item name="android:windowIsTranslucent">false</item>
+    <item name="android:background">@android:color/white</item>
+
+    <!-- Prevent action bar -->
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+
+  <!-- Launch Screen Theme -->
+  <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen">
+    <!-- Use your splash drawable resource -->
+    <item name="android:background">@drawable/splash</item>
+
+    <!-- Light status bar icons -->
+    <item name="android:statusBarColor">@android:color/transparent</item>
+  </style>
+
+</resources>
